@@ -10,19 +10,12 @@ from sentilex import Sentilex
 
 sl = Sentilex('/SentiLex-PT02')
 
-frase = ['bom',
-         'ruim',
-         'avarento',
-         'péssimo',
-         'O',
-         'rato',
-         'roeu',
-         'a',
-         'roupa',
-         'do',
-         'rei',
-         'de',
-         'roma']
+frase = []
+
+## Adicione uma faze, faça a tokenização dessa frase e percorra cada palabra achando
+## a polaridade
+
+
 acumulador = 0
 for palavra in frase:
     f = sl.searchFlex(palavra)
